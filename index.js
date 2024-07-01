@@ -10,8 +10,8 @@ if (numero < 10) {
 numero = numero.split('');
 
 for (let i = 0; i < numero.length; i++) {
-    for (let j = 0; j < numero.length; j++) {
-        if (numero[i] > numero[j]) {
+    for (let j = i + 1; j < numero.length; j++) {
+        if (numero[i] < numero[j]) {
             let aux = numero[i];
             numero[i] = numero[j];
             numero[j] = aux;
