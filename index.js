@@ -11,7 +11,6 @@ if (isNaN(Number(numero))) {
     numero = numero.split('');
 }
 
-
 for (let i = 0; i < numero.length; i++) {
     for (let j = i + 1; j < numero.length; j++) {
         if (numero[i] < numero[j]) {
